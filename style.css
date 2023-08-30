@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+
+
+}
+
+body {
+  background: #CDF7F6; 
+}
+
+nav {
+  height: 80px;
+  background: #CDF7F6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem calc((100vw - 1300px) / 2);
+}
+
+.logo {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  padding: 0 1.5rem;
+}
+
+nav a:hover {
+  color: #107C7D;
+}
+
+.hero {
+  background: #CDF7F6;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 95vh;
+  padding: 3rem calc((100vw - 1300px) / 2);
+}
+
+.hero-image {
+  width: 450px; 
+   height: 400px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px rgba(40, 60, 75, 0.3);
+  transform: rotate(3deg);
+}
+
+.column-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #000;
+  padding: 0rem 2rem;
+}
+
+.column-left h1 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.column-left p {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+button {
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  border: none;
+  color: #CDF7F6;
+  background: #000;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+button:hover {
+  background: #107C7D;
+  color: #000;
+}
+
+.column-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 2rem;
+}
+
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+
+  .hero-container {
+      grid-template-columns: 1fr 1fr; 
+      padding: 1rem;
+  }
+
+  .column-left, .column-right {
+      padding: 1rem;
+  }
+
+  .column-left h1 {
+      font-size: 2rem;  
+  }
+
+  .column-left p {
+      font-size: 1rem;  
+  }
+
+  .hero-image {
+      width: 50%;  
+      height: auto;
+      margin: 0 auto; 
+  }
+
+  button {
+      padding: 0.8rem 2rem;
+      font-size: 0.9rem;
+  }
+
+  .nav-items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;  
+      padding-top: 1.5rem; 
+  }
+
+  nav a {
+      padding: 0.5rem 0; 
+  }
+}
